@@ -1,42 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<link href="../../../../../OneDrive/Documents/New folder/style.css" rel="stylesheet" type="text/css" />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>room checking</title>
 
-<body>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <div class='container'>
+    <div class='jumbotron'>
+    <h1 id="header" >Room Checking</h1>
+  </div>
+    <div id="table">
 
-<div class="container">
-  <div class="header"><a href="#"><img src="" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a> 
-    <!-- end .header --></div>
-  <div class="sidebar1">
-    <ul class="nav">
-      <li></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <p>&nbsp;</p>
-  <!-- end .sidebar1 --></div>
-  <div class="content">
-    <form id="check_room_Avaliability" name="check_room_Avaliability" method="post" action="">
-      <label for="Select_Room_Type">Select Romm Type</label>
-      <select name="Select_Room_Type" id="Select_Room_Type">
-        <option value="meetings">Meeting Room</option>
-        <option value="games">Games</option>
-        <option value="guiet_time">Quite Time</option>
-        <option value="learning">Learning</option>
-        <option value="working">Working</option>
-      </select>
-    </form>
-    <h1>&nbsp;</h1>
-    <!-- end .content --></div>
-  <div class="footer">
-    <p>&nbsp;</p>
-    <!-- end .footer --></div>
-  <!-- end .container --></div>
-</body>
-</html>
+    <label> check for availability of a room</label>
+            <select>
+              <option>select an option</option>
+                <option>meeting</option>
+                <option>Games</option>
+                <option>Quiet-time</option>
+                <option>Learning</option>
+                <option>Working</option>
+            </select><br>
+<input id="Room" type='submit' value="check"  name='submit' method="post">
+
+<div id='space'></div>
+<div id="display"></div>
+</div>
+
+
+    
