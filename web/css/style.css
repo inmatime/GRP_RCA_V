@@ -1,14 +1,16 @@
  #body{
-          font-family: 'freightsans', 'Open sans', Helvetica, Arial, sans-serif;
-          font-size: 16px; }
+  font-family: 'freightsans', 'Open sans', Helvetica, Arial, sans-serif;
+  font-size: 16px; 
+	}
 
 
- #header {font-size: 60px; text-align="center"
-
+ #header {
+ 	font-size: 60px; text-align="center";
  }
 #content{font-size: 40px; }
 #btn{font-size:30px}
 
+<<<<<<< HEAD
 #space {width: 50px; height: 500px;}
 #table {
 	font-size: 40px
@@ -20,4 +22,8 @@
 	margin: 0 auto;
 	padding: 0px 0 15px 0;
 	font-family: Arial, Helvetica, sans-serif;
+=======
+#space {
+	width: 50px; height: 500px;
+>>>>>>> 73dc02c5977b41ab558c6813ba3135b49ee13d01
 }
