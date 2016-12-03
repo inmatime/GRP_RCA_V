@@ -11,32 +11,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!--style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
   </head>
 
   <body>
-  <div class='container'>
-    <div class='jumbotron'>
-    <h1 id="header" >Room Checking Program</h1>
-    <h3>Need a room? Select from our available option</h3>
+    <div class='container'>
+      <div class='jumbotron'>
+        <h1 id="header" >Room Checking Program</h1>
+        <h3>Need a room? Select from our available option</h3>
       </div>
-    <div id="table" align="center">
-
-    <label> check for availability of a room</label>
-            <select>
-              <option>select a room</option>
-                <option>meeting</option>
-                <option>Games</option>
-                <option>Quiet-time</option>
-                <option>Learning</option>
-                <option>Working</option>
-            </select><br>
-<input id="Room" type='submit' value="check"  name='submit' method="post">
-
-<div id='space'></div>
-<div id="display"></div>
-</div>
-
+      <div id="table" align="center"> 
+        <label> check for availability of a room</label>
+        <select id="options">Select a Room
+            <option>Meeting</option>
+            <option>Games</option>
+            <option>Quiet Time</option>
+            <option>Learning</option>
+            <option>Working</option>
+        </select><br>
+      <input id="check" type='submit' value="check"  name='submit'>
+  <div id="display"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 
