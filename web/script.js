@@ -3,23 +3,23 @@
 
 	var allRooms={
 		meeting:{
-			id: "M001",
+			id: "Meeting Room: M001",
 			status: "available"
 		},
 		games:{
-			id: "G001",
+			id: "Games Room: G001",
 			status: "unavailable"
 		},
 		quiettime:{
-			id: "Q001",
+			id: "Quiet Time Room: Q001",
 			status: "available"
 		},
 		learning:{
-			id: "L001",
+			id: "Learing Room: L001",
 			status: "unavailable"
 		},
 		working:{
-			id: "W001",
+			id: "Working Room: W001",
 			status: "available"
 		}
 	};
@@ -29,19 +29,21 @@
 	}
 	function checkRoomAvailability(room){
 		if(room.status === "available"){
-			return "Room is available";
+			return "is available";
 		}
 		if(room.status === "unavailable"){
-			return "Room is unavailable";
+			return "is unavailable";
 		}
+	}
+	function displayResult(room, result){
+		return room.id+" "+result;
 	}
 
 	document.getElementById('check').addEventListener('click', function(){
 		var userInput= document.getElementById('options').value;
 		var room= getRoom(userInput);
 		var result= checkRoomAvailability(room);
-		display.innerHTML= result;
-		
+		display.innerHTML= displayResult(room, result);	
 	}, false);
 	
 })();
