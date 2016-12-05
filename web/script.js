@@ -43,7 +43,9 @@
 		var userInput= document.getElementById('options').value;
 		var room= getRoom(userInput);
 		var result= checkRoomAvailability(room);
-		display.innerHTML= displayResult(room, result);	
+		setTimeout(function(){
+			display.innerHTML= displayResult(room, result);	
+		}, 1000);
 	}, false);
 	
 })();
